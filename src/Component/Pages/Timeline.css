@@ -1,0 +1,119 @@
+/* App.css */
+.timesheet-app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  nav button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  nav button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .week-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .week-selector button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .timesheet-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .no-entries {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .clock-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .add-row {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav {
+      margin-top: 10px;
+    }
+  
+    .timesheet-container {
+      overflow-x: scroll;
+    }
+  
+    table {
+      min-width: 600px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .week-selector span {
+      font-size: 0.9em;
+    }
+  
+    th, td {
+      padding: 5px;
+    }
+  
+    input[type="text"], input[type="number"] {
+      padding: 2px;
+    }
+  }
